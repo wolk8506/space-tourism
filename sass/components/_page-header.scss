@@ -1,5 +1,5 @@
 header {
-  background-image: url("../../images/bg-1.jpg");
+  background-image: url('../images/bg-1.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@ header {
 }
 .header__title {
   margin-bottom: 16px;
-  font-family: "spaceagecyrillic";
+  font-family: 'spaceagecyrillic';
   font-style: normal;
   font-weight: normal;
   font-size: 110px;

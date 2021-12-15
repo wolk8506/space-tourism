@@ -13,7 +13,7 @@
   opacity: 0;
 }
 .modal {
-  background-image: url("../../images/bg-6.jpg");
+  background-image: url('../images/bg-6.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -52,7 +52,7 @@
     fill: $color-accent;
   }
   &__title {
-    font-family: "spaceagecyrillic";
+    font-family: 'spaceagecyrillic';
     margin-bottom: 50px;
     font-weight: 700;
     font-size: 26px;
@@ -173,7 +173,7 @@
   &__checkbox:checked + &__checkbox-ico {
     border-color: $color-accent;
     border-radius: 2px;
-    background-image: url("../images/icon-check.svg");
+    background-image: url('../images/icon-check.svg');
     background-size: contain;
     background-origin: border-box;
     background-repeat: no-repeat;

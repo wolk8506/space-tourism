@@ -1,6 +1,6 @@
 #how-it-goes {
   background-image: linear-gradient(0deg, #010203 0%, rgba(1, 2, 3, 0) 100%),
-    url("../../images/bg-3.jpg");
+    url('../images/bg-3.jpg');
   //   transform: rotate(-180deg);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -23,7 +23,7 @@
 }
 
 .how-it-goes__title {
-  font-family: "spaceagecyrillic";
+  font-family: 'spaceagecyrillic';
   font-size: 48px;
   line-height: 1;
   margin-bottom: 100px;

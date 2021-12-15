@@ -387,7 +387,7 @@ body.modal-open {
 }
 
 header {
-  background-image: url("../../images/bg-1.jpg");
+  background-image: url("../images/bg-1.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -454,7 +454,7 @@ header {
 
 .header__title {
   margin-bottom: 16px;
-  font-family: "spaceagecyrillic";
+  font-family: 'spaceagecyrillic';
   font-style: normal;
   font-weight: normal;
   font-size: 110px;
@@ -601,8 +601,8 @@ header {
 }
 
 .about {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(8.85%, #030101), color-stop(86.98%, rgba(1, 2, 3, 0))), url("../../images/bg-5.jpg");
-  background-image: linear-gradient(180deg, #030101 8.85%, rgba(1, 2, 3, 0) 86.98%), url("../../images/bg-5.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(8.85%, #030101), color-stop(86.98%, rgba(1, 2, 3, 0))), url("../images/bg-5.jpg");
+  background-image: linear-gradient(180deg, #030101 8.85%, rgba(1, 2, 3, 0) 86.98%), url("../images/bg-5.jpg");
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -627,7 +627,7 @@ header {
 }
 
 .about__title {
-  font-family: "spaceagecyrillic";
+  font-family: 'spaceagecyrillic';
   font-size: 48px;
   line-height: 48px;
   /* identical to box height */
@@ -855,8 +855,8 @@ header {
 }
 
 #how-it-goes {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#010203), to(rgba(1, 2, 3, 0))), url("../../images/bg-3.jpg");
-  background-image: linear-gradient(0deg, #010203 0%, rgba(1, 2, 3, 0) 100%), url("../../images/bg-3.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#010203), to(rgba(1, 2, 3, 0))), url("../images/bg-3.jpg");
+  background-image: linear-gradient(0deg, #010203 0%, rgba(1, 2, 3, 0) 100%), url("../images/bg-3.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -879,7 +879,7 @@ header {
 }
 
 .how-it-goes__title {
-  font-family: "spaceagecyrillic";
+  font-family: 'spaceagecyrillic';
   font-size: 48px;
   line-height: 1;
   margin-bottom: 100px;
@@ -911,8 +911,8 @@ header {
 }
 
 #reservation {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(8.85%, #010203), color-stop(86.98%, rgba(1, 2, 3, 0))), url("../../images/bg-4.jpg");
-  background-image: linear-gradient(180deg, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%), url("../../images/bg-4.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(8.85%, #010203), color-stop(86.98%, rgba(1, 2, 3, 0))), url("../images/bg-4.jpg");
+  background-image: linear-gradient(180deg, #010203 8.85%, rgba(1, 2, 3, 0) 86.98%), url("../images/bg-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -928,7 +928,7 @@ header {
 }
 
 .reservation__title {
-  font-family: "spaceagecyrillic";
+  font-family: 'spaceagecyrillic';
   font-size: 48px;
   line-height: 48px;
 }
@@ -979,8 +979,8 @@ header {
 }
 
 .services {
-  background-image: -webkit-gradient(linear, left bottom, left top, from(#010203), color-stop(84.9%, rgba(1, 2, 3, 0))), url("../../images/bg-5.jpg");
-  background-image: linear-gradient(0deg, #010203 0%, rgba(1, 2, 3, 0) 84.9%), url("../../images/bg-5.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#010203), color-stop(84.9%, rgba(1, 2, 3, 0))), url("../images/bg-5.jpg");
+  background-image: linear-gradient(0deg, #010203 0%, rgba(1, 2, 3, 0) 84.9%), url("../images/bg-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
@@ -988,7 +988,7 @@ header {
 }
 
 .services__title {
-  font-family: "spaceagecyrillic";
+  font-family: 'spaceagecyrillic';
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
@@ -1054,7 +1054,7 @@ header {
   position: absolute;
   top: -32px;
   right: -64px;
-  content: "250 000 $";
+  content: '250 000 $';
   font-size: 14px;
   line-height: 17px;
   /* identical to box height */
@@ -1066,7 +1066,7 @@ header {
   position: absolute;
   top: -25px;
   right: -64px;
-  content: "";
+  content: '';
   width: 68px;
   height: 1px;
   background-color: #cb0e0e;
@@ -1148,7 +1148,7 @@ header {
 }
 
 .block-photo__slogan {
-  font-family: "spaceagecyrillic";
+  font-family: 'spaceagecyrillic';
   font-size: 24px;
   line-height: 30px;
   /* or 125% */
@@ -1383,8 +1383,8 @@ input:focus + label {
 }
 
 .footer {
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(9.9%, #010203), to(rgba(1, 2, 3, 0))), -webkit-gradient(linear, left bottom, left top, color-stop(9.9%, #010203), to(rgba(1, 2, 3, 0))), url("../../images/bg-6.jpg");
-  background-image: linear-gradient(180deg, #010203 9.9%, rgba(1, 2, 3, 0) 100%), linear-gradient(0deg, #010203 9.9%, rgba(1, 2, 3, 0) 100%), url("../../images/bg-6.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(9.9%, #010203), to(rgba(1, 2, 3, 0))), -webkit-gradient(linear, left bottom, left top, color-stop(9.9%, #010203), to(rgba(1, 2, 3, 0))), url("../images/bg-6.jpg");
+  background-image: linear-gradient(180deg, #010203 9.9%, rgba(1, 2, 3, 0) 100%), linear-gradient(0deg, #010203 9.9%, rgba(1, 2, 3, 0) 100%), url("../images/bg-6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top, bottom, center;
@@ -1541,39 +1541,39 @@ input:focus + label {
 }
 
 .slide-01 {
-  background-image: url("../../images/space-comand-1.jpg");
+  background-image: url("../images/space-comand-1.jpg");
 }
 
 .slide-02 {
-  background-image: url("../../images/space-comand-2.jpeg");
+  background-image: url("../images/space-comand-2.jpeg");
 }
 
 .slide-03 {
-  background-image: url("../../images/space-comand-3.jpg");
+  background-image: url("../images/space-comand-3.jpg");
 }
 
 .slide-04 {
-  background-image: url("../../images/space-comand-4.png");
+  background-image: url("../images/space-comand-4.png");
 }
 
 .slide-05 {
-  background-image: url("../../images/space-comand-5.jpg");
+  background-image: url("../images/space-comand-5.jpg");
 }
 
 .slide-06 {
-  background-image: url("../../images/space-comand-6.jpg");
+  background-image: url("../images/space-comand-6.jpg");
 }
 
 .slide-07 {
-  background-image: url("../../images/space-comand-7.jpg");
+  background-image: url("../images/space-comand-7.jpg");
 }
 
 .slide-08 {
-  background-image: url("../../images/space-comand-8.jpg");
+  background-image: url("../images/space-comand-8.jpg");
 }
 
 .slide-09 {
-  background-image: url("../../images/space-comand-1.jpg");
+  background-image: url("../images/space-comand-1.jpg");
 }
 
 @media screen and (max-width: 1229px) {
@@ -1622,7 +1622,7 @@ input:focus + label {
 }
 
 .modal {
-  background-image: url("../../images/bg-6.jpg");
+  background-image: url("../images/bg-6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -1668,7 +1668,7 @@ input:focus + label {
 }
 
 .modal__title {
-  font-family: "spaceagecyrillic";
+  font-family: 'spaceagecyrillic';
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 26px;
