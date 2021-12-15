@@ -1,0 +1,122 @@
+.contacts-guarantees {
+  background-color: #010203;
+}
+.contacts-guarantees__block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  & div + div {
+    margin-top: 0;
+  }
+}
+.contacts-guarantees__title {
+  font-family: "spaceagecyrillic";
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 46px;
+}
+.contacts-guarantees__text {
+  font-size: 24px;
+  line-height: 29px;
+}
+.contacts-guarantees__block-left {
+  width: 500px;
+}
+.contacts-guarantees__block-right {
+  width: 600px;
+  // margin-left: 100px;
+  & img {
+    display: block;
+    margin-left: auto;
+  }
+}
+.contacts-guarantees__text--left {
+  margin-bottom: 104px;
+}
+.contacts-guarantees__form {
+  & input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $color-text;
+    color: $color-text;
+  }
+
+  & div + div {
+    margin-top: 70px;
+  }
+}
+.contacts-guarantees__form-group {
+  position: relative;
+}
+label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: $color-text;
+}
+input:focus-within + label {
+  color: $color-accent;
+}
+input:hover,
+input:focus {
+  border-bottom: 1px solid $color-accent;
+}
+input:hover + label {
+  color: $color-accent;
+}
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translateY(-150%);
+}
+.contacts-guarantees__form-group--tel {
+  margin-bottom: 75px;
+}
+.contacts-guarantees__btn {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 19px;
+}
+@media screen and (max-width: 1229px) {
+  .contacts-guarantees__block-left {
+    width: 350px;
+  }
+  .contacts-guarantees__block-right {
+    width: 350px;
+    // margin-left: 100px;
+    & img {
+      width: 350px;
+      height: 350px;
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts-guarantees__block {
+    justify-content: center;
+    & div + div {
+      margin-top: 50px;
+    }
+  }
+  .contacts-guarantees__title {
+    font-size: 36px;
+  }
+  .contacts-guarantees__btn {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts-guarantees__block-right {
+    width: 350px;
+    // margin-left: 100px;
+    & img {
+      width: 290px;
+      height: 290px;
+    }
+  }
+}

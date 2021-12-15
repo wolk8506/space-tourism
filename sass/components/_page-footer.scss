@@ -1,0 +1,57 @@
+.footer {
+  background-image: linear-gradient(180deg, #010203 9.9%, rgba(1, 2, 3, 0) 100%),
+    linear-gradient(0deg, #010203 9.9%, rgba(1, 2, 3, 0) 100%),
+    url("../../images/bg-6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top, bottom, center;
+  background-size: 100% 205px, 100% 228px, cover;
+}
+.footer__block {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+.foter__info {
+  width: 165px;
+  margin-right: 52px;
+  & li + li {
+    margin-top: 48px;
+  }
+}
+.footer__link {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+}
+.footer__items li + li {
+  margin-top: 20px;
+}
+.footer__navigation {
+  margin-right: 102px;
+}
+.footer__link--color {
+  color: $color-accent;
+}
+@media screen and (max-width: 767px) {
+  .footer__block {
+    justify-content: center;
+    .foter__info {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+      & li + li {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer__block {
+    justify-content: space-between;
+  }
+  .footer__navigation {
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+}

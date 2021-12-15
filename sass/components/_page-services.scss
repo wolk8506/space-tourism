@@ -1,0 +1,220 @@
+.services {
+  background-image: linear-gradient(0deg, #010203 0%, rgba(1, 2, 3, 0) 84.9%),
+    url("../../images/bg-5.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-size: 100% 716px, cover;
+}
+.services__title {
+  font-family: "spaceagecyrillic";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 100px;
+}
+.services__item {
+  width: 500px;
+}
+.services__items {
+  display: flex;
+  justify-content: space-between;
+  // & li + li {
+  //   margin-left: 200px;
+  // }
+}
+
+.services__item-block {
+  border: 1px solid #ffffff;
+  padding-left: 132px;
+  padding-right: 132px;
+  padding-top: 43px;
+  padding-bottom: 38px;
+  margin-bottom: 25px;
+}
+.services__item .services__item-block--right {
+  padding-top: 37px;
+}
+.services__text-left,
+.services__text-right {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+.services__text-left {
+  margin-bottom: 146px;
+}
+
+.services__text-right {
+  margin-bottom: 152px;
+}
+.services__text-accent {
+  color: #cb0e0e;
+}
+.services__price {
+  position: relative;
+  font-size: 48px;
+  line-height: 57px;
+  text-align: center;
+}
+.services__price::after {
+  position: absolute;
+  top: -32px;
+  right: -64px;
+  content: "250 000 $";
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  /* серый */
+
+  color: #e5e5e5;
+}
+.services__price::before {
+  position: absolute;
+  top: -25px;
+  right: -64px;
+  content: "";
+  width: 68px;
+  height: 1px;
+  background-color: #cb0e0e;
+
+  transform: rotate(17.1deg);
+}
+.services__btn {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 19px;
+}
+.container__services {
+  padding-bottom: 42px;
+}
+.services__block-photo {
+  display: flex;
+  align-items: stretch;
+  margin-bottom: 200px;
+  & div + div {
+    margin-left: 83px;
+    margin-top: 0;
+  }
+}
+.block-photo__text {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 25px;
+}
+.block-photo__item {
+  display: flex;
+  align-items: center;
+}
+.block-photo__item svg {
+  margin-right: 16px;
+}
+
+.block-photo__item-text {
+  font-size: 24px;
+  line-height: 29px;
+}
+.block-photo__items {
+  margin-bottom: 25px;
+}
+.block-photo__text-info {
+  font-size: 12px;
+  line-height: 14px;
+  color: #e5e5e5;
+}
+.block-photo__btn {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 19px;
+}
+.block-photo__btns button + button {
+  margin-top: 49px;
+}
+.block-photo__btns {
+  margin-bottom: 0;
+}
+.block-photo__slogan {
+  font-family: "spaceagecyrillic";
+  font-size: 24px;
+  line-height: 30px;
+  /* or 125% */
+
+  text-align: center;
+}
+.block-photo__slider {
+  border: 1px solid #ffffff;
+  padding: 100px 200px;
+
+  margin-bottom: 50px;
+  & img {
+    display: block;
+  }
+}
+@media screen and (max-width: 1229px) {
+  .services__item {
+    width: 330px;
+  }
+  .services__item-block {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .services__price {
+    font-size: 42px;
+  }
+  .services__price::after {
+    right: -24px;
+  }
+  .services__price::before {
+    right: -24px;
+  }
+  .block-photo__slider {
+    padding: 15px 15px 100px 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .services__items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services__items li + li {
+    margin-top: 50px;
+  }
+  .services__title {
+    font-size: 36px;
+  }
+  .block-photo {
+    flex-wrap: wrap;
+  }
+  .services__block-photo div + div {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .services__item-block {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .services__title {
+    font-size: 23px;
+  }
+  .services__btn,
+  .block-photo__btn {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .services__item {
+    width: 100%;
+  }
+  .services__price::after {
+    right: -20px;
+  }
+  .services__price::before {
+    right: -20px;
+  }
+}

@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Космический туризм</title>
+    <link rel="shurtcut icon" href="./images/helmet.png" />
+    <link rel="stylesheet" href="./sass/main.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <div class="header__blok-link">
+          <button
+            class="navigation__btn js-open-menu"
+            type="button"
+            aria-label="Кнопка мобильного меню"
+          >
+            <svg width="40" height="40">
+              <use class="navigation__icon-menu" href="./images/icons.svg#m-menu"></use>
+            </svg>
+          </button>
+          <nav class="header__navigation js-menu-container">
+            <button
+              class="navigation__btn js-close-menu"
+              type="button"
+              aria-label="Кнопка закрытия мобильного меню"
+            >
+              <svg width="40" height="40">
+                <use class="navigation__icon-close" href="./images/icons.svg#m-close"></use>
+              </svg>
+            </button>
+            <a class="link header__link js-close-menu-about" href="#about">О НАС </a>
+            <a class="link header__link js-close-menu-price" href="#price">СТОИМОСТЬ</a>
+            <a class="link header__link js-close-menu-services" href="#services">ДОП. УСЛУГИ</a>
+            <a class="link header__link js-close-menu-guarantees" href="#contacts-guarantees"
+              >ГАРАНТИИ</a
+            >
+            <a
+              class="link header__link js-close-menu-news"
+              href="https://www.astronews.ru/"
+              rel="noopener noreferrer"
+              target="_blank"
+              >НОВОСТИ</a
+            >
+          </nav>
+          <div class="header__blok-tel">
+            <a class="link header__tel" href="tel:08000000000">0 800 000 00 00 </a>
+            <img src="./images/helmet.png" alt="" width="30" height="30" />
+          </div>
+        </div>
+        <div class="header__blok">
+          <h1 class="header__title">
+            <span class="header__title-size">космический</span><br />туризм
+          </h1>
+          <div class="header__blok-subtitle">
+            <p class="header__subtitle">Будущее уже наступило!</p>
+            <p class="header__subtitle">Осуществи мечту детства!</p>
+          </div>
+          <button class="header__btn" type="button" data-modal-open>Хочу быть космонавтом!</button>
+          <div class="header__blok-discribtion">
+            <p class="header__discription">
+              В 2021 году наступила новая эра в освоении космоса - эра космического туризма. Частные
+              компании получили доступ к космическому пространству.
+            </p>
+            <p class="header__discription">
+              Между ними обострилась конкуренция, а цена билета на полеты в космическое пространство
+              снизилась в сто раз.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="about__title">О нас</h2>
+        <div class="about__blok">
+          <img
+            src="./images/about-1@x1.jpg"
+            alt="main_richard-branson-men-in-power_posta-magazine"
+            width="500"
+            height="546"
+          />
+          <div>
+            <h3 class="about__title-blok">Virgin Galactic</h3>
+            <p class="about__subtitle">суборбитальный полет</p>
+            <ul class="about__items">
+              <li class="about__item">
+                <p>
+                  Компания Virgin Galactic 11 июля 2021 осуществила первый "туристический"
+                  суборбитальный полет со своим основателем, британским миллиардером Ричардом
+                  Брэнсоном на борту.
+                </p>
+              </li>
+              <li class="about__item">
+                <p>
+                  Корабль "Unity 22" стартовал с космического порта "Америка" в штате Нью-Мексико с
+                  помощью самолета-носителя VMS Eve. Позже он отсоединился от самолета-носителя.
+                </p>
+              </li>
+              <li class="about__item">
+                <p>
+                  Руководство Virgin Galactic надеется, что массовые суборбитальные космические
+                  полеты начнутся до 2022 года.
+                </p>
+              </li>
+            </ul>
+            <table class="about__info">
+              <tr class="info__name">
+                <td>время в пути</td>
+                <td>расстояние</td>
+                <td>в невесомости</td>
+                <td>стоимость</td>
+                <td>вернешься?</td>
+              </tr>
+              <tr class="info__text">
+                <td>1</td>
+                <td>80</td>
+                <td>4-5</td>
+                <td>250</td>
+                <td>99</td>
+              </tr>
+              <tr class="info__unit">
+                <td>час</td>
+                <td>км</td>
+                <td>мин</td>
+                <td>тис.дол</td>
+                <td>%</td>
+              </tr>
+            </table>
+
+            <table class="about__info--mobile">
+              <tr>
+                <td>время в пути</td>
+                <td>1</td>
+                <td>час</td>
+              </tr>
+              <tr>
+                <td>расстояние</td>
+                <td>80</td>
+                <td>км</td>
+              </tr>
+              <tr>
+                <td>в невесомости</td>
+                <td>4-5</td>
+                <td>мин</td>
+              </tr>
+              <tr>
+                <td>стоимость</td>
+                <td>250</td>
+                <td>тис.дол</td>
+              </tr>
+              <tr>
+                <td>вернешься?</td>
+                <td>99</td>
+                <td>%</td>
+              </tr>
+            </table>
+
+            <button class="about__btn" type="button" data-modal-open-o>ЗАБРОНИРОВАТЬ ПОЛЕТ</button>
+          </div>
+        </div>
+        <div class="about__blok about__blok--inverse">
+          <div>
+            <h3 class="about__title-blok">Blue Origin</h3>
+            <p class="about__subtitle">суборбитальный полет</p>
+            <ul class="about__items">
+              <li class="about__item">
+                <p>
+                  Суборбитальные ракета New Shepard компании Blue Origin 20 июля 2021года впервые в
+                  истории компании вывела на космическую высоту капсулу с людьми, с самым богатым
+                  человеком мира Джеффом Безосом на борту.
+                </p>
+              </li>
+              <li class="about__item">
+                <p>
+                  New Shepard высотой 18 м и шириной 4 м - многоразовый космический аппарат.
+                  Бустерная установка поднимает герметичное пассажирское судно на высоту около 76
+                  км. Импульс преподносит капсулу вверх в космос.
+                </p>
+              </li>
+              <li class="about__item">
+                <p>
+                  После этого она опускается на землю под тремя парашютами. Ракета-носитель тоже
+                  возвращается домой.
+                </p>
+              </li>
+            </ul>
+            <table class="about__info about__info--text">
+              <tr class="info__name">
+                <td>время в пути</td>
+                <td>расстояние</td>
+                <td>в невесомости</td>
+                <td>стоимость</td>
+                <td>вернешься?</td>
+              </tr>
+              <tr class="info__text">
+                <td>10</td>
+                <td>100</td>
+                <td>4-5</td>
+                <td>250</td>
+                <td>99</td>
+              </tr>
+              <tr class="info__unit">
+                <td>мин</td>
+                <td>км</td>
+                <td>мин</td>
+                <td>тыс.дол</td>
+                <td>%</td>
+              </tr>
+            </table>
+
+            <table class="about__info--mobile">
+              <tr>
+                <td>время в пути</td>
+                <td>10</td>
+                <td>мин</td>
+              </tr>
+              <tr>
+                <td>расстояние</td>
+                <td>100</td>
+                <td>км</td>
+              </tr>
+              <tr>
+                <td>в невесомости</td>
+                <td>4-5</td>
+                <td>мин</td>
+              </tr>
+              <tr>
+                <td>стоимость</td>
+                <td>250</td>
+                <td>тыс.дол</td>
+              </tr>
+              <tr>
+                <td>вернешься?</td>
+                <td>99</td>
+                <td>%</td>
+              </tr>
+            </table>
+
+            <p class="about__text">
+              * стоимость 200-250 тыс. дол. по четным/нечетным или как повезет
+            </p>
+            <button class="about__btn" type="button" data-modal-open-t>ЗАБРОНИРОВАТЬ ПОЛЕТ</button>
+          </div>
+          <img src="./images/about-2@x1.jpg" alt="" width="500" height="700" />
+        </div>
+        <div class="about__blok">
+          <img src="./images/about-3@x1.jpg" alt="" width="500" height="603" />
+          <div>
+            <h3 class="about__title-blok" lang="en">SpaceX</h3>
+            <p class="about__subtitle">А может на Луну или Марс?</p>
+            <ul class="about__items">
+              <li class="about__item">
+                <p>
+                  В 2016 году на 67-м ежегодном Международном конгрессе астронавтики Илон Маск
+                  заявил, что оптимистичный временной график предусматривает первый полет к Марсу в
+                  2022 году (доставка груза).
+                </p>
+              </li>
+              <li class="about__item">
+                <p>
+                  Полет с экипажем - в 2024 году. На Красную планету экипаж прибудет в 2025-26 году.
+                  "Я начал SpaceX, потому что хотел помочь снизить стоимость космических перевозок,
+                  чтобы основать жизни на другой планете".
+                </p>
+              </li>
+              <li class="about__item">
+                <p>
+                  Если все пойдет по плану, то благодаря Маск к 2050 году жителями Красной планеты
+                  смогут себя назвать около миллиона человек. Туда их доставит флотилия из тысячи
+                  кораблей Starship.
+                </p>
+              </li>
+            </ul>
+            <table class="about__info">
+              <tr class="info__name">
+                <td>время в пути</td>
+                <td>расстояние</td>
+                <td>в невесомости</td>
+                <td>стоимость</td>
+                <td>вернешься?</td>
+              </tr>
+              <tr class="info__text">
+                <td>150</td>
+                <td>55</td>
+                <td>много</td>
+                <td>10</td>
+                <td>1</td>
+              </tr>
+              <tr class="info__unit">
+                <td>дней</td>
+                <td>млн.км</td>
+                <td>мин</td>
+                <td>млрд.дол</td>
+                <td>%</td>
+              </tr>
+            </table>
+
+            <table class="about__info--mobile">
+              <tr>
+                <td>время в пути</td>
+                <td>150</td>
+                <td>дней</td>
+              </tr>
+              <tr>
+                <td>расстояние</td>
+                <td>55</td>
+                <td>млн.км</td>
+              </tr>
+              <tr>
+                <td>в невесомости</td>
+                <td>много</td>
+                <td>мин</td>
+              </tr>
+              <tr>
+                <td>стоимость</td>
+                <td>10</td>
+                <td>млрд.дол</td>
+              </tr>
+              <tr>
+                <td>вернешься?</td>
+                <td>1</td>
+                <td>%</td>
+              </tr>
+            </table>
+
+            <button class="about__btn" type="button" data-modal-open-th>ЗАБРОНИРОВАТЬ ПОЛЕТ</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="how-it-goes">
+      <div class="container">
+        <h2 class="how-it-goes__title">Как все <br />происходит</h2>
+        <div>
+          <svg
+            class="how-it-goes__map"
+            width="700"
+            height="530"
+            viewBox="0 0 1000 600"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <line x1="20.2474" y1="19.56552" x2="161.247" y2="95.5655" stroke="white" />
+            <line x1="161.43" y1="95.7448" x2="215.43" y2="186.745" stroke="white" />
+            <line x1="215.439" y1="186.76" x2="286.439" y2="316.76" stroke="white" />
+            <line x1="286.444" y1="317.229" x2="236.444" y2="414.229" stroke="white" />
+            <line x1="286.207" y1="316.545" x2="545.207" y2="434.545" stroke="white" />
+            <line x1="236.29" y1="413.593" x2="406.29" y2="534.593" stroke="white" />
+            <line x1="405.708" y1="534.594" x2="544.708" y2="434.594" stroke="white" />
+            <g>
+              <circle class="circle" cx="20" cy="20" r="10" fill="white" />
+              <text x="43" y="28" fill="white">Выбираете программу</text>
+            </g>
+            <g>
+              <circle cx="161" cy="96" r="10" fill="white" />
+              <text x="186" y="104" fill="white">Оплачиваете</text>
+            </g>
+            <g>
+              <circle cx="215" cy="187" r="10" fill="white" />
+              <text x="240" y="193" fill="white">Какая-то будет подготовка</text>
+            </g>
+            <g>
+              <circle cx="286" cy="317" r="10" fill="white" />
+              <text x="310" y="320" fill="white">Садимся. Летим. Невесомость</text>
+            </g>
+            <g>
+              <circle cx="236" cy="414" r="10" fill="white" />
+              <foreignObject x="100" y="400" width="110" height="100">
+                <p class="how-it-goes__text">Делаем фото в инстаграм</p>
+              </foreignObject>
+            </g>
+            <g>
+              <circle cx="406" cy="535" r="10" fill="white" />
+              <foreignObject x="428" y="525" width="120" height="90">
+                <p>Приземляемся, но это не точно</p>
+              </foreignObject>
+            </g>
+            <g>
+              <circle cx="545" cy="435" r="10" fill="white" />
+              <foreignObject x="568" y="410" width="273" height="200">
+                <p>
+                  Едим из тюбиков: 5 видов меню на выбор (веган, спорт, безлактозное, безглютеновое,
+                  обычное)
+                </p>
+              </foreignObject>
+            </g>
+          </svg>
+
+          <ol class="how-it-goes__list">
+            <li><p>Выбираете программу</p></li>
+            <li><p>Оплачиваете</p></li>
+            <li><p>Какая-то будет подготовка</p></li>
+            <li><p>Садимся. Летим. Невесомость</p></li>
+            <li><p>Делаем фото в инстаграм</p></li>
+            <li><p>Приземляемся, но это не точно</p></li>
+            <li>
+              <p>
+                Едим из тюбиков: 5 видов меню на выбор (веган, спорт, безлактозное, безглютеновое,
+                обычное)
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section id="reservation">
+      <div class="container reservation__block">
+        <h2 class="reservation__title">Успей <br />забронировать!</h2>
+        <ul class="reservation__items">
+          <li class="reservation__item">
+            <p>
+              Руководство Virgin Galactic надеется, что массовые суборбитальные космические полеты
+              начнутся до 2022 года. Компания уже несколько лет продает билеты на такие полеты по
+              250 тыс долл.
+            </p>
+          </li>
+          <li class="reservation__item">
+            <p>
+              Virgin Galactic получила задатков более чем 80 млн долл, а количество желающих
+              превышает 600 человек.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="services" id="price">
+      <div class="container container__services">
+        <h2 class="services__title">
+          Спец<br />
+          предложения
+        </h2>
+        <ul class="services__items">
+          <li class="services__item">
+            <div class="services__item-block">
+              <p class="services__text-left">
+                Забронируй полет
+                <span class="services__text-accent"> прямо сейчас </span><br />и получи скидку 1000$
+              </p>
+              <p class="services__price">249 000 $</p>
+            </div>
+            <button class="services__btn" type="button" data-modal-open-s>
+              ЗАБРОНИРОВАТЬ ПОЛЕТ
+            </button>
+          </li>
+          <li class="services__item">
+            <div class="services__item-block services__item-block--right">
+              <p class="services__text-right">
+                Приведи друга и получи
+                <span class="services__text-accent">скидку 10%</span><br />
+                на следующий полет, если вернешься
+              </p>
+              <p class="services__price">225 000 $</p>
+            </div>
+            <button class="services__btn" type="button" data-modal-open-f>
+              ЗАБРОНИРОВАТЬ ПОЛЕТ
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="container" id="services">
+        <h2 class="services__title">Дополнительные <br />услуги</h2>
+        <div class="services__block-photo block-photo">
+          <div>
+            <p class="block-photo__text">С Вами полетит профессиональный фотограф</p>
+            <ul class="block-photo__items">
+              <li class="block-photo__item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="10" cy="10" r="10" fill="white" />
+                </svg>
+                <p class="block-photo__item-text">20 фотографий в профессиональной обработке</p>
+              </li>
+              <li class="block-photo__item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="10" cy="10" r="10" fill="white" />
+                </svg>
+                <p class="block-photo__item-text">фото книга</p>
+              </li>
+              <li class="block-photo__item">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="10" cy="10" r="10" fill="white" />
+                </svg>
+                <p class="block-photo__item-text">магнит на холодильник в подарок</p>
+              </li>
+            </ul>
+            <p class="block-photo__text-info">
+              Стоимость фотосессии в невесомости 100 000 $. Доплати 50 000 $ и получи все фото в
+              цветокоррекции на диске.
+            </p>
+          </div>
+          <div class="block-photo__btns">
+            <button class="block-photo__btn" type="button" data-modal-open-p>
+              КУПИТЬ УСЛУГИ ФОТОГРАФА
+            </button>
+            <button class="block-photo__btn" type="button" data-modal-open-d>ХОЧУ И ДИСК</button>
+          </div>
+        </div>
+        <div class="block-photo__slider">
+          <div class="sl">
+            <div class="slider__blok">
+              <div class="sidebar sidebar-mobile">
+                <div id="sl1"></div>
+                <div id="sl2"></div>
+                <div id="sl3"></div>
+              </div>
+              <div class="main-slide sidebar-mobile">
+                <div class="slide-01"></div>
+                <div class="slide-02"></div>
+                <div class="slide-03"></div>
+                <div class="slide-04"></div>
+                <div class="slide-05"></div>
+                <div class="slide-06"></div>
+                <div class="slide-07"></div>
+                <div class="slide-08"></div>
+                <div class="slide-09"></div>
+              </div>
+            </div>
+          </div>
+          <div class="controls sidebar-mobile">
+            <button class="down-button slider-btn">
+              <svg class="slider__icon" width="101" height="8">
+                <use href="./images/icons.svg#arrow-2"></use>
+              </svg>
+            </button>
+            <button class="up-button slider-btn">
+              <svg class="slider__icon" width="101" height="8">
+                <use href="./images/icons.svg#arrow-1"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <p class="block-photo__slogan">
+          Ты знаешь о Космическом законе – представь себе то, что ты хочешь, и оно войдет в твою
+          жизнь.
+        </p>
+      </div>
+    </section>
+    <section class="contacts-guarantees" id="contacts-guarantees">
+      <div class="container contacts-guarantees__block">
+        <div class="contacts-guarantees__block-left">
+          <h3 class="contacts-guarantees__title">Контакты</h3>
+          <p class="contacts-guarantees__text contacts-guarantees__text--left">
+            Оставь свои контакты и мы перезвоним тебе в ближайшие 100 лет!
+          </p>
+          <form class="contacts-guarantees__form" autocomplete="off">
+            <div class="contacts-guarantees__form-group">
+              <input type="text" id="name" required minlength="3" placeholder=" " />
+              <label for="name">ФИО *</label>
+            </div>
+            <div class="contacts-guarantees__form-group">
+              <input type="text" id="name-cild" required minlength="3" placeholder=" " />
+              <label for="name-cild">Имя ребенка или внука (на всякий случай)</label>
+            </div>
+            <div class="contacts-guarantees__form-group contacts-guarantees__form-group--tel">
+              <input
+                type="text"
+                id="tel"
+                required
+                minlength="10"
+                pattern="[0]{1}[3-9]{1}[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="Введите номер телефона в формате 088-888-88-88"
+                placeholder=" "
+              />
+              <label for="tel">Телефон *</label>
+            </div>
+
+            <button class="contacts-guarantees__btn" type="submit">ЗАБРОНИРОВАТЬ ПОЛЕТ</button>
+          </form>
+        </div>
+        <div class="contacts-guarantees__block-right">
+          <h3 class="contacts-guarantees__title">Гарантии</h3>
+          <p class="contacts-guarantees__text">
+            Ни одна моя ракета еще не сделала удачную попытку, потому что в ней не было тебя!<br />
+            Будь первым! Колонизируй Марс! <br />Илон Маск
+          </p>
+          <img src="./images/ilon.png" alt="Илон Маск" width="396" height="396" />
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container footer__block">
+        <ul class="foter__info">
+          <li>
+            <p>Служба поддержки работает межгалактично и суборбитально</p>
+          </li>
+          <li><p>График приема посетителей строго по записи</p></li>
+        </ul>
+        <ul class="footer__navigation footer__items">
+          <li><a class="link footer__link" href="#about">О НАС </a></li>
+          <li><a class="link footer__link" href="#price">СТОИМОСТЬ</a></li>
+          <li><a class="link footer__link" href="#services">ДОП. УСЛУГИ</a></li>
+          <li>
+            <a class="link footer__link" href="#contacts-guarantees">ГАРАНТИИ</a>
+          </li>
+          <li>
+            <a
+              class="link footer__link"
+              href="https://www.astronews.ru/"
+              rel="noopener noreferrer"
+              target="_blank"
+              >НОВОСТИ</a
+            >
+          </li>
+        </ul>
+        <ul class="footer__social footer__items">
+          <li>
+            <a
+              class="link footer__link"
+              href="https://www.spacex.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+              >spacex.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="link footer__link"
+              href="https://www.blueorigin.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+              >blueorigin.com</a
+            >
+          </li>
+          <li>
+            <a
+              class="link footer__link"
+              href="https://virgingalactic.com/"
+              rel="noopener noreferrer"
+              target="_blank"
+              >virgingalactic.com</a
+            >
+          </li>
+          <li>
+            <a class="link footer__link footer__link--color" href="tel:08000000000"
+              >0 800 000 00 00</a
+            >
+          </li>
+          <li>
+            <a
+              class="link footer__link"
+              href="http://mks-online.ru"
+              rel="noopener noreferrer"
+              target="_blank"
+              >МКС</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal__btn-close" type="button" data-modal-close>
+          <svg class="modal__icon" width="18" height="18">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+        <div class="contacts">
+          <form>
+            <div class="contacts__form">
+              <label class="contacts__label" for="username-k">ФИО *</label
+              ><input
+                class="contacts__input"
+                type="text"
+                name="username-k"
+                id="username-k"
+                required
+                minlength="3"
+                placeholder=" "
+              /><svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+            <div class="contacts__form">
+              <label class="contacts__label" for="name_cild_k"
+                >Имя ребенка или внука (на всякий случай)</label
+              >
+              <input class="contacts__input" type="text" name="name_cild_k" id="name_cild_k" />
+              <svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+            <div class="contacts__form contacts__form--last">
+              <label class="contacts__label" for="tel-k">Телефон *</label>
+              <input
+                class="contacts__input"
+                type="tel"
+                name="tel-k"
+                id="tel-k"
+                required
+                minlength="10"
+                pattern="[0]{1}[3-9]{1}[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="Введите номер телефона в формате 088-888-88-88"
+              />
+              <svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+
+            <!-- checkbox -->
+
+            <label class="contacts__text" for="checkbox-k">
+              <input
+                class="visually-hidden contacts__checkbox"
+                name="checkbox-k"
+                type="checkbox"
+                id="checkbox-k"
+                required
+              /><span class="contacts__checkbox-ico"></span>принимаю
+              <a class="contacts__text-link" href="" target="_blank" rel="noopener noreferrer"
+                >Условия договора *</a
+              >
+            </label>
+
+            <button class="contacts__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Модальное окно #2 -->
+    <div class="backdrop is-hidden" data-modal-p>
+      <div class="modal">
+        <button class="modal__btn-close" type="button" data-modal-close-p>
+          <svg class="modal__icon" width="18" height="18">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+        <div class="contacts">
+          <form>
+            <div class="contacts__form">
+              <label class="contacts__label" for="username-p">ФИО *</label
+              ><input
+                class="contacts__input"
+                type="text"
+                name="username-p"
+                id="username-p"
+                required
+                minlength="3"
+                placeholder=" "
+              /><svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+
+            <div class="contacts__form contacts__form--last">
+              <label class="contacts__label" for="tel-p">Телефон *</label>
+              <input
+                class="contacts__input"
+                type="tel"
+                name="tel-p"
+                id="tel-p"
+                required
+                minlength="10"
+                pattern="[0]{1}[3-9]{1}[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="Введите номер телефона в формате 088-888-88-88"
+              />
+              <svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+
+            <!-- checkbox -->
+
+            <label class="contacts__text" for="checkbox-pp">
+              <input
+                class="visually-hidden contacts__checkbox"
+                name="checkbox-pp"
+                type="checkbox"
+                id="checkbox-pp"
+                checked
+              /><span class="contacts__checkbox-ico"></span>купить услуги фотографа
+            </label>
+
+            <button class="contacts__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно #3 -->
+    <div class="backdrop is-hidden" data-modal-d>
+      <div class="modal">
+        <button class="modal__btn-close" type="button" data-modal-close-d>
+          <svg class="modal__icon" width="18" height="18">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+        <div class="contacts">
+          <form>
+            <div class="contacts__form">
+              <label class="contacts__label" for="username-d">ФИО *</label
+              ><input
+                class="contacts__input"
+                type="text"
+                name="username-d"
+                id="username-d"
+                required
+                minlength="3"
+                placeholder=" "
+              /><svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+
+            <div class="contacts__form contacts__form--last">
+              <label class="contacts__label" for="tel-d">Телефон *</label>
+              <input
+                class="contacts__input"
+                type="tel"
+                name="tel-d"
+                id="tel-d"
+                required
+                minlength="10"
+                pattern="[0]{1}[3-9]{1}[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="Введите номер телефона в формате 088-888-88-88"
+              />
+              <svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+
+            <!-- checkbox -->
+
+            <label class="contacts__text" for="checkbox-pd">
+              <input
+                class="visually-hidden contacts__checkbox"
+                name="checkbox-pd"
+                type="checkbox"
+                id="checkbox-pd"
+                checked
+              /><span class="contacts__checkbox-ico"></span>купить услуги фотографа
+            </label>
+
+            <label class="contacts__text" for="checkbox-dd">
+              <input
+                class="visually-hidden contacts__checkbox"
+                name="checkbox-dd"
+                type="checkbox"
+                id="checkbox-dd"
+                checked
+              /><span class="contacts__checkbox-ico"></span>Хочу и диск
+            </label>
+
+            <button class="contacts__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Модальное окно #4 -->
+    <div class="backdrop is-hidden" data-modal-s>
+      <div class="modal">
+        <button class="modal__btn-close" type="button" data-modal-close-s>
+          <svg class="modal__icon" width="18" height="18">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="services__text-left modal__text-left">
+          Забронируй полет
+          <span class="services__text-accent"> прямо сейчас </span><br />и получи скидку 1000$
+        </p>
+        <div class="contacts">
+          <form>
+            <div class="contacts__form">
+              <label class="contacts__label" for="username-s">ФИО *</label
+              ><input
+                class="contacts__input"
+                type="text"
+                name="username-s"
+                id="username-s"
+                required
+                minlength="3"
+                placeholder=" "
+              /><svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+            <div class="contacts__form">
+              <label class="contacts__label" for="name_cild_k-s"
+                >Имя ребенка или внука (на всякий случай)</label
+              >
+              <input class="contacts__input" type="text" name="name_cild_k-s" id="name_cild_k-s" />
+              <svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+            <div class="contacts__form contacts__form--last">
+              <label class="contacts__label" for="tel-s">Телефон *</label>
+              <input
+                class="contacts__input"
+                type="tel"
+                name="tel-s"
+                id="tel-s"
+                required
+                minlength="10"
+                pattern="[0]{1}[3-9]{1}[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="Введите номер телефона в формате 088-888-88-88"
+              />
+              <svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+
+            <!-- checkbox -->
+
+            <label class="contacts__text" for="checkbox-s">
+              <input
+                class="visually-hidden contacts__checkbox"
+                name="checkbox-s"
+                type="checkbox"
+                id="checkbox-s"
+                required
+              /><span class="contacts__checkbox-ico"></span>принимаю
+              <a class="contacts__text-link" href="" target="_blank" rel="noopener noreferrer"
+                >Условия договора *</a
+              >
+            </label>
+
+            <button class="contacts__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно #5 -->
+    <div class="backdrop is-hidden" data-modal-f>
+      <div class="modal">
+        <button class="modal__btn-close" type="button" data-modal-close-f>
+          <svg class="modal__icon" width="18" height="18">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+
+        <p class="services__text-right modal__text-left">
+          Приведи друга и получи<br />
+          <span class="services__text-accent">скидку 10%</span><br />
+          на следующий полет, если вернешься
+        </p>
+        <div class="contacts">
+          <form>
+            <div class="contacts__form">
+              <label class="contacts__label" for="username-f">ФИО *</label
+              ><input
+                class="contacts__input"
+                type="text"
+                name="username-f"
+                id="username-f"
+                required
+                minlength="3"
+                placeholder=" "
+              /><svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+
+            <div class="contacts__form contacts__form--friend">
+              <label class="contacts__label" for="tel-f">Телефон *</label>
+              <input
+                class="contacts__input"
+                type="tel"
+                name="tel-f"
+                id="tel-f"
+                required
+                minlength="10"
+                pattern="[0]{1}[3-9]{1}[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="Введите номер телефона в формате 088-888-88-88"
+              />
+              <svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+
+            <p class="services__text-right modal__text-left">
+              Получи
+              <span class="services__text-accent">скидку 10%</span>
+            </p>
+
+            <div class="contacts__form">
+              <label class="contacts__label" for="username-ff">ФИО друга *</label
+              ><input
+                class="contacts__input"
+                type="text"
+                name="username-ff"
+                id="username-ff"
+                required
+                minlength="3"
+                placeholder=" "
+              /><svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+
+            <div class="contacts__form contacts__form--last">
+              <label class="contacts__label" for="tel-ff">Телефон друга *</label>
+              <input
+                class="contacts__input"
+                type="tel"
+                name="tel-ff"
+                id="tel-ff"
+                required
+                minlength="10"
+                pattern="[0]{1}[3-9]{1}[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="Введите номер телефона в формате 088-888-88-88"
+              />
+              <svg class="contacts__icon" width="18" height="18">
+                <use href="./images/icons.svg#phone"></use>
+              </svg>
+            </div>
+
+            <!-- checkbox -->
+
+            <label class="contacts__text" for="checkbox-f">
+              <input
+                class="visually-hidden contacts__checkbox"
+                name="checkbox-f"
+                type="checkbox"
+                id="checkbox-f"
+                required
+              /><span class="contacts__checkbox-ico"></span>принимаю
+              <a class="contacts__text-link" href="#" target="_blank" rel="noopener noreferrer"
+                >Условия договора</a
+              >
+            </label>
+
+            <button class="contacts__btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- js для модального окна -->
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/slider2.js"></script>
+  </body>
+</html>

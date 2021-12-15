@@ -1,0 +1,121 @@
+.sl {
+  width: 800px;
+  height: 450px;
+
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+.block-photo__slider {
+  position: relative;
+}
+.sidebar {
+  position: absolute;
+  top: 50%;
+  right: 6%;
+  transform: translateY(-50%);
+  transition: transform 0.5s ease-in-out;
+  z-index: 10;
+}
+
+.main-slide {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 900%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.main-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+.slider-btn {
+  border: none;
+
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+  // @include animation(color border-bottom);
+}
+
+.down-button {
+  position: absolute;
+  left: 40px;
+  bottom: 50%;
+
+  background-color: transparent;
+  transform: translateY(50%);
+}
+.up-button {
+  position: absolute;
+  right: 40px;
+  bottom: 50%;
+
+  background-color: transparent;
+  transform: translateY(50%);
+}
+
+.sl .controls .down-button {
+  transform: translateX(200px);
+  text-align: left;
+}
+
+.sl .controls .up-button {
+  text-align: right;
+}
+
+.slide-01 {
+  background-image: url("../../images/space-comand-1.jpg");
+}
+.slide-02 {
+  background-image: url("../../images/space-comand-2.jpeg");
+}
+.slide-03 {
+  background-image: url("../../images/space-comand-3.jpg");
+}
+.slide-04 {
+  background-image: url("../../images/space-comand-4.png");
+}
+.slide-05 {
+  background-image: url("../../images/space-comand-5.jpg");
+}
+.slide-06 {
+  background-image: url("../../images/space-comand-6.jpg");
+}
+.slide-07 {
+  background-image: url("../../images/space-comand-7.jpg");
+}
+.slide-08 {
+  background-image: url("../../images/space-comand-8.jpg");
+}
+.slide-09 {
+  background-image: url("../../images/space-comand-1.jpg");
+}
+@media screen and (max-width: 1229px) {
+  .sl {
+    width: 100%;
+  }
+  .down-button {
+    bottom: 50px;
+  }
+  .up-button {
+    bottom: 50px;
+  }
+}
+@media screen and (max-width: 467px) {
+  .down-button {
+    bottom: 50px;
+    left: 20px;
+  }
+  .up-button {
+    bottom: 50px;
+    right: 20px;
+  }
+}

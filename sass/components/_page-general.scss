@@ -1,0 +1,69 @@
+body {
+  background-color: gray;
+  font-family: "sf-pro-display";
+  color: $color-text;
+}
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+.container {
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1230px) {
+    width: 1230px;
+  }
+
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.link {
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid $color-text;
+  box-sizing: border-box;
+
+  font-family: "sf-pro-display";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  fill: $color-text;
+  color: $color-text;
+}
+button:hover,
+button:focus {
+  // border: 1px solid $color-accent;
+  color: $color-accent;
+  fill: $color-accent;
+}
+.link {
+  color: $color-text;
+}
+.link:focus,
+.link:hover {
+  color: $color-accent;
+}
+body.modal-open {
+  overflow: hidden;
+}

@@ -1,0 +1,57 @@
+#reservation {
+  background-image: linear-gradient(
+      180deg,
+      #010203 8.85%,
+      rgba(1, 2, 3, 0) 86.98%
+    ),
+    url("../../images/bg-4.jpg");
+  background-repeat: no-repeat;
+
+  background-size: cover;
+}
+.reservation__block {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 718px;
+}
+.reservation__title {
+  font-family: "spaceagecyrillic";
+  font-size: 48px;
+  line-height: 48px;
+}
+.reservation__items {
+  display: flex;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  & li + li {
+    margin-left: 53px;
+  }
+}
+.reservation__item {
+  width: 165px;
+}
+@media screen and (max-width: 1229px) {
+  .reservation__block {
+    display: block;
+    padding-bottom: 350px;
+  }
+  .reservation__items {
+    justify-content: flex-end;
+  }
+  .reservation__title {
+    margin-bottom: 100px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .reservation__title {
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .reservation__title {
+    font-size: 24px;
+  }
+}
