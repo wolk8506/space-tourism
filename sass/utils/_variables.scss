@@ -1,5 +1,20 @@
 $color-text: #ffffff;
 $color-accent: #cb0e0e;
+$color-subtitle: #036cca;
+$color-text-small: #e5e5e5;
+
+$gradient-about: #030101;
+$gradient-about-2: rgba(1, 2, 3, 0);
+
+$color-background: #010203;
+$color-background-2: rgba(0, 0, 0, 0.8);
+$color-background-3: rgba(0, 0, 0, 0.8);
+$color-background-4: #000000;
+
+// Шрифты
+$font-text: 'sf-pro-display';
+$font-text-b: 'sf-pro-display-b';
+$font-accent: 'spaceagecyrillic';
 
 /* Визуальное скрытие заголовка */
 .visually-hidden {

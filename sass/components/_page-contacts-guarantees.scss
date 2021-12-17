@@ -1,5 +1,5 @@
 .contacts-guarantees {
-  background-color: #010203;
+  background-color: $color-background;
 }
 .contacts-guarantees__block {
   display: flex;
@@ -10,21 +10,20 @@
   }
 }
 .contacts-guarantees__title {
-  font-family: "spaceagecyrillic";
+  font-family: $font-accent;
   font-size: 48px;
-  line-height: 48px;
+  line-height: 1;
   margin-bottom: 46px;
 }
 .contacts-guarantees__text {
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.21;
 }
 .contacts-guarantees__block-left {
   width: 500px;
 }
 .contacts-guarantees__block-right {
   width: 600px;
-  // margin-left: 100px;
   & img {
     display: block;
     margin-left: auto;
@@ -40,6 +39,7 @@
     border: none;
     border-bottom: 1px solid $color-text;
     color: $color-text;
+    @include animation(border);
   }
 
   & div + div {
@@ -53,11 +53,11 @@ label {
   position: absolute;
   top: 0px;
   left: 0px;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   text-transform: uppercase;
   color: $color-text;
+  @include animation(color transform);
 }
 input:focus-within + label {
   color: $color-accent;
@@ -87,7 +87,6 @@ input:focus + label {
   }
   .contacts-guarantees__block-right {
     width: 350px;
-    // margin-left: 100px;
     & img {
       width: 350px;
       height: 350px;
@@ -113,7 +112,6 @@ input:focus + label {
 @media screen and (max-width: 767px) {
   .contacts-guarantees__block-right {
     width: 350px;
-    // margin-left: 100px;
     & img {
       width: 290px;
       height: 290px;

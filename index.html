@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Космический туризм. Хочу быть космонавтом! Туристический суборбитальный полет"
+    />
     <title>Космический туризм</title>
     <link rel="shurtcut icon" href="./images/helmet.png" />
     <link rel="stylesheet" href="./css/main.min.css" />
@@ -47,7 +51,8 @@
           </nav>
           <div class="header__blok-tel">
             <a class="link header__tel" href="tel:08000000000">0 800 000 00 00 </a>
-            <img src="./images/helmet.png" alt="" width="30" height="30" />
+
+            <img src="./images/helmet.png" alt="Лого шлем" width="30" height="30" />
           </div>
         </div>
         <div class="header__blok">
@@ -77,12 +82,25 @@
       <div class="container">
         <h2 class="about__title">О нас</h2>
         <div class="about__blok">
-          <img
-            src="./images/about-1@x1.jpg"
-            alt="main_richard-branson-men-in-power_posta-magazine"
-            width="500"
-            height="546"
-          />
+          <picture>
+            <source
+              srcset="./images/about-1@x1-480.webp 1x, ./images/about-1@x2-480.webp 2x"
+              type="image/webp"
+              media="(max-width: 767px)" />
+            <source
+              srcset="./images/about-1@x1.webp 1x, ./images/about-1@x2.webp 2x"
+              type="image/webp"
+              media="(min-width: 768px)" />
+            <source
+              srcset="./images/about-1@x1-480.jpg 1x, ./images/about-1@x2-480.jpg 2x"
+              media="(max-width: 767px)" />
+            <source
+              srcset="./images/about-1@x1.jpg 1x, ./images/about-1@x2.jpg 2x"
+              media="(min-width: 768px)" />
+
+            <img src="./images/about-1@x1.jpg" alt="Ричард Брансон" width="500" height="540"
+          /></picture>
+
           <div>
             <h3 class="about__title-blok">Virgin Galactic</h3>
             <p class="about__subtitle">суборбитальный полет</p>
@@ -245,10 +263,45 @@
             </p>
             <button class="about__btn" type="button" data-modal-open-t>ЗАБРОНИРОВАТЬ ПОЛЕТ</button>
           </div>
-          <img src="./images/about-2@x1.jpg" alt="" width="500" height="700" />
+          <picture>
+            <source
+              srcset="./images/about-2@x1-480.webp 1x, ./images/about-2@x2-480.webp 2x"
+              type="image/webp"
+              media="(max-width: 767px)" />
+            <source
+              srcset="./images/about-2@x1.webp 1x, ./images/about-2@x2.webp 2x"
+              type="image/webp"
+              media="(min-width: 768px)" />
+            <source
+              srcset="./images/about-2@x1-480.jpg 1x, ./images/about-2@x2-480.jpg 2x"
+              media="(max-width: 767px)" />
+            <source
+              srcset="./images/about-2@x1.jpg 1x, ./images/about-2@x2.jpg 2x"
+              media="(min-width: 768px)" />
+
+            <img src="./images/about-2@x1.jpg" alt="Команда космонавтов" width="500" height="700"
+          /></picture>
         </div>
         <div class="about__blok">
-          <img src="./images/about-3@x1.jpg" alt="" width="500" height="603" />
+          <picture>
+            <source
+              srcset="./images/about-3@x1-480.webp 1x, ./images/about-3@x2-480.webp 2x"
+              type="image/webp"
+              media="(max-width: 767px)" />
+            <source
+              srcset="./images/about-3@x1.webp 1x, ./images/about-3@x2.webp 2x"
+              type="image/webp"
+              media="(min-width: 768px)" />
+            <source
+              srcset="./images/about-3@x1-480.jpg 1x, ./images/about-3@x2-480.jpg 2x"
+              media="(max-width: 767px)" />
+            <source
+              srcset="./images/about-3@x1.jpg 1x, ./images/about-3@x2.jpg 2x"
+              media="(min-width: 768px)" />
+
+            <img src="./images/about-3@x1.jpg" alt="Илон Маск" width="500" height="603"
+          /></picture>
+
           <div>
             <h3 class="about__title-blok" lang="en">SpaceX</h3>
             <p class="about__subtitle">А может на Луну или Марс?</p>
@@ -468,7 +521,7 @@
             <p class="block-photo__text">С Вами полетит профессиональный фотограф</p>
             <ul class="block-photo__items">
               <li class="block-photo__item">
-                <svg
+                <!-- <svg
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
@@ -476,11 +529,11 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle cx="10" cy="10" r="10" fill="white" />
-                </svg>
+                </svg> -->
                 <p class="block-photo__item-text">20 фотографий в профессиональной обработке</p>
               </li>
               <li class="block-photo__item">
-                <svg
+                <!-- <svg
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
@@ -488,11 +541,11 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle cx="10" cy="10" r="10" fill="white" />
-                </svg>
+                </svg> -->
                 <p class="block-photo__item-text">фото книга</p>
               </li>
               <li class="block-photo__item">
-                <svg
+                <!-- <svg
                   width="20"
                   height="20"
                   viewBox="0 0 20 20"
@@ -500,7 +553,7 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <circle cx="10" cy="10" r="10" fill="white" />
-                </svg>
+                </svg> -->
                 <p class="block-photo__item-text">магнит на холодильник в подарок</p>
               </li>
             </ul>
@@ -510,7 +563,7 @@
             </p>
           </div>
           <div class="block-photo__btns">
-            <button class="block-photo__btn" type="button" data-modal-open-p>
+            <button class="block-photo__btn block-photo__btn--img" type="button" data-modal-open-p>
               КУПИТЬ УСЛУГИ ФОТОГРАФА
             </button>
             <button class="block-photo__btn" type="button" data-modal-open-d>ХОЧУ И ДИСК</button>
@@ -538,12 +591,12 @@
             </div>
           </div>
           <div class="controls sidebar-mobile">
-            <button class="down-button slider-btn">
+            <button class="down-button slider-btn" aria-label="Слайд вперед">
               <svg class="slider__icon" width="101" height="8">
                 <use href="./images/icons.svg#arrow-2"></use>
               </svg>
             </button>
-            <button class="up-button slider-btn">
+            <button class="up-button slider-btn" aria-label="Слайд назад">
               <svg class="slider__icon" width="101" height="8">
                 <use href="./images/icons.svg#arrow-1"></use>
               </svg>
@@ -595,7 +648,17 @@
             Ни одна моя ракета еще не сделала удачную попытку, потому что в ней не было тебя!<br />
             Будь первым! Колонизируй Марс! <br />Илон Маск
           </p>
-          <img src="./images/ilon.png" alt="Илон Маск" width="396" height="396" />
+          <picture>
+            <source
+              srcset="./images/ilon-1@x1.webp 1x, ./images/ilon-1@x2.webp 2x"
+              type="image/webp"
+              media="(min-width: 320px)" />
+            <source
+              srcset="./images/ilon-1@x1.png 1x, ./images/ilon-1@x2.png 2x"
+              media="(min-width: 320px)" />
+
+            <img src="./images/ilon-1@x1.png" alt="Илон Маск" width="396" height="396"
+          /></picture>
         </div>
       </div>
     </section>
@@ -730,7 +793,7 @@
                 id="checkbox-k"
                 required
               /><span class="contacts__checkbox-ico"></span>принимаю
-              <a class="contacts__text-link" href="" target="_blank" rel="noopener noreferrer"
+              <a class="contacts__text-link" href="#" target="_blank" rel="noopener noreferrer"
                 >Условия договора *</a
               >
             </label>
@@ -936,7 +999,7 @@
                 id="checkbox-s"
                 required
               /><span class="contacts__checkbox-ico"></span>принимаю
-              <a class="contacts__text-link" href="" target="_blank" rel="noopener noreferrer"
+              <a class="contacts__text-link" href="#" target="_blank" rel="noopener noreferrer"
                 >Условия договора *</a
               >
             </label>

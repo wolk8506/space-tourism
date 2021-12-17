@@ -1,17 +1,26 @@
 .services {
-  background-image: linear-gradient(0deg, #010203 0%, rgba(1, 2, 3, 0) 84.9%),
-    url('../images/bg-5.jpg');
+  background-image: linear-gradient(0deg, $color-background 0%, $gradient-about-2 84.9%),
+    url('../images/bg-5@x1.jpg');
+  @media screen and (min-width: 320px) {
+    background-image: linear-gradient(0deg, $color-background 0%, $gradient-about-2 84.9%),
+      url('../images/bg-5@x1.jpg');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(0deg, $color-background 0%, $gradient-about-2 84.9%),
+        url('../images/bg-5@x2.jpg');
+    }
+  }
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   background-size: 100% 716px, cover;
 }
 .services__title {
-  font-family: 'spaceagecyrillic';
-  font-style: normal;
-  font-weight: normal;
+  font-family: $font-accent;
   font-size: 48px;
-  line-height: 48px;
+  line-height: 1;
   margin-bottom: 100px;
 }
 .services__item {
@@ -20,13 +29,9 @@
 .services__items {
   display: flex;
   justify-content: space-between;
-  // & li + li {
-  //   margin-left: 200px;
-  // }
 }
-
 .services__item-block {
-  border: 1px solid #ffffff;
+  border: 1px solid $color-text;
   padding-left: 132px;
   padding-right: 132px;
   padding-top: 43px;
@@ -38,26 +43,23 @@
 }
 .services__text-left,
 .services__text-right {
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.21;
   text-align: center;
 }
 .services__text-left {
   margin-bottom: 146px;
 }
-
 .services__text-right {
   margin-bottom: 152px;
 }
 .services__text-accent {
-  color: #cb0e0e;
+  color: $color-accent;
 }
 .services__price {
   position: relative;
   font-size: 48px;
-  line-height: 57px;
+  line-height: 1.19;
   text-align: center;
 }
 .services__price::after {
@@ -66,12 +68,8 @@
   right: -64px;
   content: '250 000 $';
   font-size: 14px;
-  line-height: 17px;
-  /* identical to box height */
-
-  /* серый */
-
-  color: #e5e5e5;
+  line-height: 1.21;
+  color: $color-text-small;
 }
 .services__price::before {
   position: absolute;
@@ -80,8 +78,7 @@
   content: '';
   width: 68px;
   height: 1px;
-  background-color: #cb0e0e;
-
+  background-color: $color-accent;
   transform: rotate(17.1deg);
 }
 .services__btn {
@@ -104,27 +101,35 @@
 .block-photo__text {
   font-size: 24px;
   line-height: 29px;
-  margin-bottom: 25px;
+  margin-bottom: 1.21;
 }
 .block-photo__item {
   display: flex;
   align-items: center;
 }
-.block-photo__item svg {
-  margin-right: 16px;
-}
-
 .block-photo__item-text {
   font-size: 24px;
-  line-height: 29px;
+  line-height: 1.21;
+  position: relative;
+  margin-left: 30px;
+}
+.block-photo__item-text::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 20px;
+  background-color: $color-text;
+  left: -30px;
+  top: 4px;
+  border-radius: 50%;
 }
 .block-photo__items {
   margin-bottom: 25px;
 }
 .block-photo__text-info {
   font-size: 12px;
-  line-height: 14px;
-  color: #e5e5e5;
+  line-height: 1.16;
+  color: $color-text-small;
 }
 .block-photo__btn {
   width: 100%;
@@ -138,20 +143,38 @@
   margin-bottom: 0;
 }
 .block-photo__slogan {
-  font-family: 'spaceagecyrillic';
+  font-family: $font-accent;
   font-size: 24px;
-  line-height: 30px;
-  /* or 125% */
-
+  line-height: 1.25;
   text-align: center;
 }
 .block-photo__slider {
-  border: 1px solid #ffffff;
+  border: 1px solid $color-text;
   padding: 100px 200px;
-
   margin-bottom: 50px;
   & img {
     display: block;
+  }
+}
+.block-photo__btn--img {
+  position: relative;
+}
+.block-photo__btn--img::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 49px;
+  width: 192px;
+  height: 150px;
+  background-image: url('../images/astronaut@x1.png');
+  @media screen and (min-width: 320px) {
+    background-image: url('../images/astronaut@x1.png');
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/astronaut@x2.png');
+    }
   }
 }
 @media screen and (max-width: 1229px) {
@@ -174,6 +197,9 @@
   .block-photo__slider {
     padding: 15px 15px 100px 15px;
   }
+  .block-photo__btn--img::before {
+    bottom: 77px;
+  }
 }
 @media screen and (max-width: 767px) {
   .services__items {
@@ -191,7 +217,10 @@
   }
   .services__block-photo div + div {
     margin-left: 0;
-    margin-top: 50px;
+    margin-top: 150px;
+  }
+  .block-photo__btn--img::before {
+    bottom: 49px;
   }
 }
 @media screen and (max-width: 479px) {
@@ -216,5 +245,8 @@
   }
   .services__price::before {
     right: -20px;
+  }
+  .block-photo__btn--img::before {
+    bottom: 39px;
   }
 }

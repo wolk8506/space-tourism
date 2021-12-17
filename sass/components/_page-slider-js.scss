@@ -1,7 +1,6 @@
 .sl {
   width: 800px;
   height: 450px;
-
   display: block;
   position: relative;
   overflow: hidden;
@@ -17,7 +16,6 @@
   transition: transform 0.5s ease-in-out;
   z-index: 10;
 }
-
 .main-slide {
   display: flex;
   height: 100%;
@@ -27,29 +25,23 @@
   width: 900%;
   transition: transform 0.5s ease-in-out;
 }
-
 .main-slide > div {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  display: block;
   height: 100%;
   width: 100%;
 }
-
 .slider-btn {
   border: none;
-
-  cursor: pointer;
   font-size: 16px;
   padding: 15px;
-  // @include animation(color border-bottom);
 }
-
 .down-button {
   position: absolute;
   left: 40px;
   bottom: 50%;
-
   background-color: transparent;
   transform: translateY(50%);
 }
@@ -57,31 +49,31 @@
   position: absolute;
   right: 40px;
   bottom: 50%;
-
   background-color: transparent;
   transform: translateY(50%);
 }
-
+.up-button:focus,
+.down-button:focus {
+  fill: $color-text;
+}
 .sl .controls .down-button {
   transform: translateX(200px);
   text-align: left;
 }
-
 .sl .controls .up-button {
   text-align: right;
 }
-
 .slide-01 {
   background-image: url('../images/space-comand-1.jpg');
 }
 .slide-02 {
-  background-image: url('../images/space-comand-2.jpeg');
+  background-image: url('../images/space-comand-2.jpg');
 }
 .slide-03 {
   background-image: url('../images/space-comand-3.jpg');
 }
 .slide-04 {
-  background-image: url('../images/space-comand-4.png');
+  background-image: url('../images/space-comand-4.jpg');
 }
 .slide-05 {
   background-image: url('../images/space-comand-5.jpg');

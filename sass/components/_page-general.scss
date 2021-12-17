@@ -1,6 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-color: gray;
-  font-family: "sf-pro-display";
+  font-family: $font-text;
   color: $color-text;
 }
 h1,
@@ -42,23 +44,21 @@ button {
   background-color: transparent;
   border: 1px solid $color-text;
   box-sizing: border-box;
-
-  font-family: "sf-pro-display";
-  font-style: normal;
-  font-weight: normal;
+  font-family: $font-text;
   font-size: 24px;
   line-height: 29px;
   fill: $color-text;
   color: $color-text;
+  @include animation(color fill);
 }
 button:hover,
 button:focus {
-  // border: 1px solid $color-accent;
   color: $color-accent;
   fill: $color-accent;
 }
 .link {
   color: $color-text;
+  @include animation(color);
 }
 .link:focus,
 .link:hover {
