@@ -126,6 +126,7 @@ function slide(wrapper, items, prev, next) {
       items.style.left = -(1 * slideSize) + "px";
       index = 0;
     }
+    timerReset()
     allowShift = true;
   }
 
