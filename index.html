@@ -521,39 +521,12 @@
             <p class="block-photo__text">С Вами полетит профессиональный фотограф</p>
             <ul class="block-photo__items">
               <li class="block-photo__item">
-                <!-- <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="10" cy="10" r="10" fill="white" />
-                </svg> -->
                 <p class="block-photo__item-text">20 фотографий в профессиональной обработке</p>
               </li>
               <li class="block-photo__item">
-                <!-- <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="10" cy="10" r="10" fill="white" />
-                </svg> -->
                 <p class="block-photo__item-text">фото книга</p>
               </li>
               <li class="block-photo__item">
-                <!-- <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <circle cx="10" cy="10" r="10" fill="white" />
-                </svg> -->
                 <p class="block-photo__item-text">магнит на холодильник в подарок</p>
               </li>
             </ul>
@@ -570,37 +543,28 @@
           </div>
         </div>
         <div class="block-photo__slider">
-          <div class="sl">
-            <div class="slider__blok">
-              <div class="sidebar sidebar-mobile">
-                <div id="sl1"></div>
-                <div id="sl2"></div>
-                <div id="sl3"></div>
-              </div>
-              <div class="main-slide sidebar-mobile">
-                <div class="slide-01"></div>
-                <div class="slide-02"></div>
-                <div class="slide-03"></div>
-                <div class="slide-04"></div>
-                <div class="slide-05"></div>
-                <div class="slide-06"></div>
-                <div class="slide-07"></div>
-                <div class="slide-08"></div>
-                <div class="slide-09"></div>
+          <div id="slider" class="slider">
+            <div class="wrapper">
+              <div id="slides" class="slides">
+                <span class="slide slide-01"></span>
+                <span class="slide slide-02"></span>
+                <span class="slide slide-03"></span>
+                <span class="slide slide-04"></span>
+                <span class="slide slide-05"></span>
+                <span class="slide slide-06"></span>
+                <span class="slide slide-07"></span>
+                <span class="slide slide-08"></span>
               </div>
             </div>
-          </div>
-          <div class="controls sidebar-mobile">
-            <button class="down-button slider-btn" aria-label="Слайд вперед">
-              <svg class="slider__icon" width="101" height="8">
-                <use href="./images/icons.svg#arrow-2"></use>
-              </svg>
-            </button>
-            <button class="up-button slider-btn" aria-label="Слайд назад">
-              <svg class="slider__icon" width="101" height="8">
-                <use href="./images/icons.svg#arrow-1"></use>
-              </svg>
-            </button>
+
+            <a id="prev" class="control prev"
+              ><svg class="slider__icon" width="101" height="8">
+                <use href="./images/icons.svg#arrow-2"></use></svg
+            ></a>
+            <a id="next" class="control next"
+              ><svg class="slider__icon" width="101" height="8">
+                <use href="./images/icons.svg#arrow-1"></use></svg
+            ></a>
           </div>
         </div>
 
@@ -1119,6 +1083,7 @@
     <!-- js для модального окна -->
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
-    <script src="./js/slider2.js"></script>
+    <!-- <script src="./js/slider2.js"></script> -->
+    <script src="./js/slider.js"></script>
   </body>
 </html>
